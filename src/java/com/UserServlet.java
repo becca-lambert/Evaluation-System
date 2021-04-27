@@ -76,6 +76,8 @@ public class UserServlet extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/StaffEmail.jsp").forward(request, response);
              } else if (request.getParameter("option").equals("Employee1")){
             request.getRequestDispatcher("/WEB-INF/Employee1.jsp").forward(request, response);
+            } else if (request.getParameter("option").equals("Employee2")){
+            request.getRequestDispatcher("/WEB-INF/Employee2.jsp").forward(request, response);
              } else if (request.getParameter("option").equals("StaffEmail")){
             request.getRequestDispatcher("/WEB-INF/StaffEmail.jsp").forward(request, response);
         } else {

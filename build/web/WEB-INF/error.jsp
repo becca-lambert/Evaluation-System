@@ -12,7 +12,7 @@
         <title>error</title>
     </head>
     <body>
-        <jsp:include page="headerEM.jsp"/>
+        <jsp:include page="headerEm.jsp"/>
         <h1>error!</h1>
     </body>
 </html>
