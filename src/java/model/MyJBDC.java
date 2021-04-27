@@ -581,29 +581,36 @@ public class MyJBDC {
      
      
      
-     public static int secondloginauth(com.UserInput e){
-        int status=0;
-        try {
-            Connection con=MyJBDC.getConnection(); 
-            PreparedStatement ps=con.prepareStatement("select * from APP.DATA where ID = '?' and ROLE = 'becca' ");
-            ps.setInt(1,e.getID());
-     
+      public static List<com.UserInput> getResults(){
+        List list=new ArrayList();
+        try{
+            Connection con=MyJBDC.getConnection();
             
-            System.out.println(ps);
-            ResultSet rs = ps.executeQuery();
-            boolean test = rs.next();
-            if (test){
-                status = 1;
-                return status;
-            }
-            else{
-                status = 0;
+           
+            PreparedStatement ps=con.prepareStatement("select * from APP.DATA");
+            ResultSet rs=ps.executeQuery();
+            
+            while(rs.next()){
+                com.UserInput e= new com.UserInput();
+                e.setEQ1(rs.getInt(1));
+                e.setEQ2(rs.getInt(2));
+               e.setEQ3(rs.getInt(3));
+               e.setEQ4(rs.getInt(4));
+               e.setEQ5(rs.getInt(5));
+               e.setEQ6(rs.getInt(6));
+               e.setEQ7(rs.getInt(7));
+               e.setEQ8(rs.getInt(8));
+               e.setEQ9(rs.getInt(9));
+               e.setlates(rs.getInt(10));
+               e.setweeksales(rs.getInt(11));
+               e.setadvsales(rs.getInt(12));
+               e.setlastweeksales(rs.getInt(13));
+              
+                list.add(e);
             }
             con.close();
-            
-        }catch(Exception ex) {ex.printStackTrace();}
-        
-        return status;
+        }catch(Exception x){x.printStackTrace();}
+        return list;
     }
 
     

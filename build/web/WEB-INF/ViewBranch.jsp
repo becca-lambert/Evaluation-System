@@ -1,14 +1,10 @@
-//%-- 
-    Document   : viewAppointment 
-    Created on : 17-Feb-2021, 14:09:32
-    Author     : Becca
---%>
+
 
 <%@ page language="java" contentType="text/html; charset=US-ASCII" pageEncoding="US-ASCII"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
 <!DOCTYPE html>
 <html>
-<title>View Schedule</title>
+<title>View Branch Data</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -66,7 +62,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
         <div class="w3-col m12">
           <div class="w3-card w3-round w3-white">
             <div class="w3-container w3-padding">
-              <h6 class="w3-opacity">WELCOME TO EVAL-SMART</h6>
+              <h6 class="w3-opacity">EVAL-SMART</h6>
                           </div>
           </div>
         </div>

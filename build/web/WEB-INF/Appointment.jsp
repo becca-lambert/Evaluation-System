@@ -75,7 +75,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
         <div class="w3-col m12">
           <div class="w3-card w3-round w3-white">
             <div class="w3-container w3-padding">
-              <h6 class="w3-opacity">WELCOME TO EVAL-SMART</h6>
+              <h6 class="w3-opacity"> EVAL-SMART</h6>
                           </div>
           </div>
         </div>

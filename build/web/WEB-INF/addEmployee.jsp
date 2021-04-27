@@ -1,15 +1,11 @@
-<%-- 
-    Document   : Appointment
-    Created on : 20-Feb-2021, 21:44:18
-    Author     : Becca
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Book a meeting with a manager</title>
+        <title> Add an employee</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -71,7 +67,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
         <div class="w3-col m12">
           <div class="w3-card w3-round w3-white">
             <div class="w3-container w3-padding">
-              <h6 class="w3-opacity">WELCOME TO EVAL-SMART</h6>
+              <h6 class="w3-opacity">EVAL-SMART</h6>
                           </div>
           </div>
         </div>

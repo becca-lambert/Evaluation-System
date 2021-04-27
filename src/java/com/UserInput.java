@@ -10,7 +10,7 @@ package com;
  * @author becca
  */
 public class UserInput {
-    private int id,turnover,jans, febs, marchs, EQ1,EQ2,EQ3,EQ4,EQ5,EQ6,EQ7,EQ8,EQ9,lates;
+    private int id,turnover,jans, febs, marchs, EQ1,EQ2,EQ3,EQ4,EQ5,EQ6,EQ7,EQ8,EQ9,lates,weeksales,lastweeksales,advsales;
     private String name,username,password,role,address,type,option,date,time,amount,medi,dose,reason,dob,permUsername,transferID,ReQ,Place,CName,startDate,endDate,DN, price,issue,Cdate,MadeBy, EQname, un,BR,KIT,BAR,SERVICE,DF;
     
     
@@ -23,11 +23,29 @@ public class UserInput {
     public void setID(int id){
         this.id = id;
     }
+     public int getweeksales(){
+        return weeksales;
+    }
+    public void setweeksales(int weeksales){
+        this.id = weeksales;
+    }
+     public int getlastweeksales(){
+        return lastweeksales;
+    }
+    public void setlastweeksales(int lastweeksales){
+        this.lastweeksales = lastweeksales;
+    }
      public int getlates(){
         return lates;
     }
-    public void setlates(int id){
+    public void setlates(int lates){
         this.lates = lates;
+    }
+     public int getadvsales(){
+        return advsales;
+    }
+    public void setadvsales(int advsales){
+        this.advsales = advsales;
     }
      public int getjans(){
         return jans;

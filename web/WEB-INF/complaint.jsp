@@ -1,15 +1,11 @@
-<%-- 
-    Document   : Appointment
-    Created on : 20-Feb-2021, 21:44:18
-    Author     : Becca
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Book a meeting with a manager</title>
+        <title> Make a complaint </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">

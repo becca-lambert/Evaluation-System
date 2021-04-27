@@ -14,6 +14,7 @@ import java.util.Set;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -42,23 +43,45 @@ public class ViewResults extends HttpServlet {
         
         //Get user input from add0
         
-         String EmployeeNumber = request.getParameter("pname").toString();
-        int EmployeeNum = Integer.parseInt(EmployeeNumber); //CONVERT STRING TO INT
-
-      
-     
-        //Set variables to user input
-        com.UserInput e=new com.UserInput();
-       e.setID(EmployeeNum);
-  
-
-        int status = model.MyJBDC.secondloginauth(e);
-        if (status == 1) {
-            out.println("<p>Login successful BECCA</p>");
-          //  request.getRequestDispatcher("Becca.jsp").include(request, response);
+          
+        String username = null;
+        Cookie userCookie[] = request.getCookies();
+        if (userCookie != null) {
+            for (int i = 0; i < userCookie.length; i++) {
+                if (userCookie[i].getName().equals("username")) // Retrieve username from the cookie
+                {
+                    username = userCookie[i].getValue();
+                }
+            }
+            response.setContentType("text/html");
+            out.println(" Hello!   " + username);
         } 
         
+        
+        
+        String Cdate = ((String)username);
+        //Set variables to user input
 
+    
+  
+
+         List<com.UserInput> list = MyJBDC.getBranch();
+        for (com.UserInput e:list) {
+            //out.print("<tr><td>" + e.getID()+ "</td><td>" + e.getName()+ "</td><td>" + e.getReason()+ "</td><td>" + e.getTime()+ "</td><td>" + e.getDate() + "</td><td>" + "<input type='radio' name='deleteRadio' value='"+e.getID() + "'>" + "</td><tr>");
+            out.print("<tr><td>" + e.getjans()+ 
+                    "</td><td>" + e.getfebs()+
+                    "</td><td>" + e.getmarchs()+ 
+               
+                    
+
+                    "</td><td>"+ "<a href = \"./dateRemover?userID="+e.getID()+"\">clear" + "</td></tr>");
+            
+        }
+ 
+        out.print("</table>");
+        request.getRequestDispatcher("BranchData.jsp").include(request, response);
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
