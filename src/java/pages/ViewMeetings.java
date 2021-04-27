@@ -40,15 +40,12 @@ public class ViewMeetings extends HttpServlet {
         out.print("<tr><th>Employee</th><th>Time</th><th>Manager</th><th>Date</th><th>Issue</th></tr>");
         List<com.UserInput> list = MyJBDC.getMeetings();
         for (com.UserInput e:list) {
-            //out.print("<tr><td>" + e.getID()+ "</td><td>" + e.getName()+ "</td><td>" + e.getReason()+ "</td><td>" + e.getTime()+ "</td><td>" + e.getDate() + "</td><td>" + "<input type='radio' name='deleteRadio' value='"+e.getID() + "'>" + "</td><tr>");
+            
             out.print("<tr><td>" + e.getName()+ 
                     "</td><td>" + e.getReason()+
                     "</td><td>" + e.getTime()+ 
                     "</td><td>" + e.getDate() +
-                     "</td><td>" + e.getDN() +
-                    
-
-                    "</td><td>"+ "<a href = \"./dateRemover?userID="+e.getID()+"\">clear" + "</td></tr>");
+                     "</td><td>" + e.getDN() );
             
         }
  

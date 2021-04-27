@@ -40,7 +40,7 @@ public class ScheduleViewer extends HttpServlet {
         out.print("<tr><th>DATE</th><th>BACKROOM RESTOCK</th><th>KITCHEN</th><th>BAR</th><th>SERVICE</th><th>DAY OFF</th></tr>");
         List<com.UserInput> list = MyJBDC.getAllDates();
         for (com.UserInput e:list) {
-            //out.print("<tr><td>" + e.getID()+ "</td><td>" + e.getName()+ "</td><td>" + e.getReason()+ "</td><td>" + e.getTime()+ "</td><td>" + e.getDate() + "</td><td>" + "<input type='radio' name='deleteRadio' value='"+e.getID() + "'>" + "</td><tr>");
+          
             out.print("<tr><td>" + e.getDate()+ 
                     "</td><td>" + e.getBR()+
                  

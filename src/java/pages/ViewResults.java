@@ -70,11 +70,7 @@ public class ViewResults extends HttpServlet {
             //out.print("<tr><td>" + e.getID()+ "</td><td>" + e.getName()+ "</td><td>" + e.getReason()+ "</td><td>" + e.getTime()+ "</td><td>" + e.getDate() + "</td><td>" + "<input type='radio' name='deleteRadio' value='"+e.getID() + "'>" + "</td><tr>");
             out.print("<tr><td>" + e.getjans()+ 
                     "</td><td>" + e.getfebs()+
-                    "</td><td>" + e.getmarchs()+ 
-               
-                    
-
-                    "</td><td>"+ "<a href = \"./dateRemover?userID="+e.getID()+"\">clear" + "</td></tr>");
+                    "</td><td>" + e.getmarchs());
             
         }
  

@@ -60,7 +60,7 @@ public class Complaint extends HttpServlet {
         //Get user input from add0
         String pname = (String)request.getParameter("pname");
         String issue= (String)request.getParameter("issue");
-       // String Cdate= (String)request.getParameter("Cdate");
+      
         String MadeBy= (String)request.getParameter("MadeBy");
         
      

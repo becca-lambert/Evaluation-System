@@ -106,13 +106,13 @@ public class SelfEvaluation extends HttpServlet {
         
         int status=MyJBDC.SelfEvaluation(e);
         if(status>0){
-            out.println(Q9);
             
             
-            request.getRequestDispatcher("VeiwStats.jsp").include(request, response);
+            
+            request.getRequestDispatcher("LoginSuccess.jsp").include(request, response);
         }
         else{
-            out.println(Q9);
+            
         }
         out.close();     
     }

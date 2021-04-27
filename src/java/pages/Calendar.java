@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author ben
+ * @author becca
  */
 public class Calendar extends HttpServlet {
 

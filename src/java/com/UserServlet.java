@@ -38,20 +38,14 @@ public class UserServlet extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/Appointment.jsp").forward(request, response);
         } else if (request.getParameter("option").equals("schedule")) {
             request.getRequestDispatcher("/WEB-INF/viewBooking.jsp").forward(request, response); 
-        } else if (request.getParameter("option").equals("payBill")) {
-            request.getRequestDispatcher("/WEB-INF/payBill.jsp").forward(request, response);
-        } else if (request.getParameter("option").equals("createInvoice")) {
-            request.getRequestDispatcher("/WEB-INF/createInvoice.jsp").forward(request, response);
+       
+        
         } else if (request.getParameter("option").equals("SelfEvaluation")) {
             request.getRequestDispatcher("/WEB-INF/SelfEvaluation.jsp").forward(request, response);
-        } else if (request.getParameter("option").equals("prescription")) {
-            request.getRequestDispatcher("/WEB-INF/prescription.jsp").forward(request, response);    
-        } else if (request.getParameter("option").equals("patientTransfers")) {
-            request.getRequestDispatcher("/WEB-INF/patientTransfers.jsp").forward(request, response);
+       
         } else if (request.getParameter("option").equals("Schedule")) {
             request.getRequestDispatcher("/WEB-INF/Schedule.jsp").forward(request, response); 
-         } else if (request.getParameter("option").equals("removepatient")) {
-            request.getRequestDispatcher("/WEB-INF/deleteP.jsp").forward(request, response); 
+      
          } else if (request.getParameter("option").equals("calculateTurnover")){
             request.getRequestDispatcher("/WEB-INF/Calculate.jsp").forward(request, response);
          } else if (request.getParameter("option").equals("Complaint")){
@@ -60,8 +54,7 @@ public class UserServlet extends HttpServlet {
             request.getRequestDispatcher("/WEB-INF/VeiwStats.jsp").forward(request, response);
          } else if (request.getParameter("option").equals("ViewComplaints")){
             request.getRequestDispatcher("/WEB-INF/ViewComplaints.jsp").forward(request, response);
-         } else if (request.getParameter("option").equals("test")){
-            request.getRequestDispatcher("/WEB-INF/test.jsp").forward(request, response);
+        
          } else if (request.getParameter("option").equals("meetings")){
             request.getRequestDispatcher("/WEB-INF/ViewMeetings.jsp").forward(request, response);
          } else if (request.getParameter("option").equals("EmployeeEvaluation")){

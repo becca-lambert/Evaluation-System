@@ -25,7 +25,6 @@
         <servlet-name>Calendar</servlet-name>
         <servlet-class>pages.Calendar</servlet-class>
     </servlet>
-    
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet.do</url-pattern>
@@ -70,30 +69,6 @@
         <servlet-name>NewUser</servlet-name>
         <url-pattern>/NewUser.do</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>List0</servlet-name>
-        <url-pattern>/List0</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>List0</servlet-name>
-        <servlet-class>pages.List0</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>List0</servlet-name>
-        <url-pattern>/List0.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>NewPatient</servlet-name>
-        <servlet-class>pages.NewPatient</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>NewPatient</servlet-name>
-        <url-pattern>/NewPatient</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>NewPatient</servlet-name>
-        <url-pattern>/NewPatient.do</url-pattern>
-    </servlet-mapping>
     <servlet>
         <servlet-name>NewEmployee</servlet-name>
         <servlet-class>pages.NewEmployee</servlet-class>
@@ -110,66 +85,7 @@
         <servlet-name>Calendar</servlet-name>
         <url-pattern>/Calendar</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>createInvoice</servlet-name>
-        <servlet-class>pages.createInvoice</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>createInvoice</servlet-name>
-        <url-pattern>/createInvoice</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>createInvoice</servlet-name>
-        <url-pattern>/createInvoice.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>addPatient</servlet-name>
-        <servlet-class>pages.addPatient</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>addPatient</servlet-name>
-        <url-pattern>/addPatient</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>addPatient</servlet-name>
-        <url-pattern>/addPatient.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>payBill</servlet-name>
-        <servlet-class>pages.payBill</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>payBill</servlet-name>
-        <url-pattern>/payBill</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>payBill</servlet-name>
-        <url-pattern>/payBill.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>calculateTurnover</servlet-name>
-        <servlet-class>pages.calculateTurnover</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>calculateTurnover</servlet-name>
-        <url-pattern>/calculateTurnover</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>calculateTurnover</servlet-name>
-        <url-pattern>/calculateTurnover.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>patientTransfers</servlet-name>
-        <servlet-class>pages.patientTransfers</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>patientTransfers</servlet-name>
-        <url-pattern>/patientTransfers</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>patientTransfers</servlet-name>
-        <url-pattern>/patientTransfers.do</url-pattern>
-    </servlet-mapping>
+ 
     <servlet>
         <servlet-name>listPeriod</servlet-name>
         <servlet-class>pages.listPeriod</servlet-class>
@@ -182,42 +98,7 @@
         <servlet-name>listPeriod</servlet-name>
         <url-pattern>/listPeriod.do</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>prescription</servlet-name>
-        <servlet-class>pages.prescription</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>prescription</servlet-name>
-        <url-pattern>/prescription</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>prescription</servlet-name>
-        <url-pattern>/prescription.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>REprescription</servlet-name>
-        <servlet-class>pages.REprescription</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>REprescription</servlet-name>
-        <url-pattern>/REprescription</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>REprescription</servlet-name>
-        <url-pattern>/REprescription.do</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>priceViewer</servlet-name>
-        <servlet-class>pages.priceViewer</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>priceViewer</servlet-name>
-        <url-pattern>/priceViewer</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>priceViewer</servlet-name>
-        <url-pattern>/priceViewer.do</url-pattern>
-    </servlet-mapping>
+  
     <servlet-mapping>
         <servlet-name>dateViewer</servlet-name>
         <url-pattern>/dateViewer</url-pattern>
@@ -230,8 +111,6 @@
         <servlet-name>dateViewer</servlet-name>
         <url-pattern>/dateViewer.do</url-pattern>
     </servlet-mapping>
-    
-    
     <servlet-mapping>
         <servlet-name>SelfEvaluation</servlet-name>
         <url-pattern>/SelfEvaluation</url-pattern>
@@ -244,9 +123,7 @@
         <servlet-name>SelfEvaluation</servlet-name>
         <url-pattern>/SelfEvaluation.do</url-pattern>
     </servlet-mapping>
-    
-    
-        <servlet-mapping>
+    <servlet-mapping>
         <servlet-name>Complaint</servlet-name>
         <url-pattern>/Complaint</url-pattern>
     </servlet-mapping>
@@ -258,10 +135,8 @@
         <servlet-name>Complaint</servlet-name>
         <url-pattern>/Complaint.do</url-pattern>
     </servlet-mapping>
-    
-    
-     <servlet-mapping>
-    <servlet-name>ScheduleViewer</servlet-name>
+    <servlet-mapping>
+        <servlet-name>ScheduleViewer</servlet-name>
         <url-pattern>/ScheduleViewer</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -272,9 +147,8 @@
         <servlet-name>ScheduleViewer</servlet-name>
         <url-pattern>/ScheduleViewer.do</url-pattern>
     </servlet-mapping>
-    
     <servlet-mapping>
-    <servlet-name>ViewMeetings</servlet-name>
+        <servlet-name>ViewMeetings</servlet-name>
         <url-pattern>/ViewMeetings</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -285,9 +159,8 @@
         <servlet-name>ViewMeetings</servlet-name>
         <url-pattern>/ViewMeetings.do</url-pattern>
     </servlet-mapping>
-    
-      <servlet-mapping>
-    <servlet-name>ViewComplaints</servlet-name>
+    <servlet-mapping>
+        <servlet-name>ViewComplaints</servlet-name>
         <url-pattern>/ViewComplaints</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -298,9 +171,8 @@
         <servlet-name>ViewComplaints</servlet-name>
         <url-pattern>/ViewComplaints.do</url-pattern>
     </servlet-mapping>
-    
     <servlet-mapping>
-    <servlet-name>employeevaluation</servlet-name>
+        <servlet-name>employeevaluation</servlet-name>
         <url-pattern>/employeevaluation</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -311,9 +183,8 @@
         <servlet-name>employeevaluation</servlet-name>
         <url-pattern>/employeevaluation.do</url-pattern>
     </servlet-mapping>
-    
-     <servlet-mapping>
-    <servlet-name>ViewBranch</servlet-name>
+    <servlet-mapping>
+        <servlet-name>ViewBranch</servlet-name>
         <url-pattern>/ViewBranch</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -324,9 +195,8 @@
         <servlet-name>ViewBranch</servlet-name>
         <url-pattern>/ViewBranch.do</url-pattern>
     </servlet-mapping>
-    
-     <servlet-mapping>
-    <servlet-name>ViewStats</servlet-name>
+    <servlet-mapping>
+        <servlet-name>ViewStats</servlet-name>
         <url-pattern>/ViewStats</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -337,9 +207,8 @@
         <servlet-name>ViewStats</servlet-name>
         <url-pattern>/ViewStats.do</url-pattern>
     </servlet-mapping>
-    
-      <servlet-mapping>
-    <servlet-name>AddTask</servlet-name>
+    <servlet-mapping>
+        <servlet-name>AddTask</servlet-name>
         <url-pattern>/AddTask</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -350,9 +219,8 @@
         <servlet-name>AddTask</servlet-name>
         <url-pattern>/AddTask.do</url-pattern>
     </servlet-mapping>
-  
-      <servlet-mapping>
-    <servlet-name>ViewResults</servlet-name>
+    <servlet-mapping>
+        <servlet-name>ViewResults</servlet-name>
         <url-pattern>/ViewResults</url-pattern>
     </servlet-mapping>
     <servlet>
@@ -363,7 +231,6 @@
         <servlet-name>ViewResults</servlet-name>
         <url-pattern>/ViewResults.do</url-pattern>
     </servlet-mapping>
-  
     <session-config>
         <session-timeout>
             25

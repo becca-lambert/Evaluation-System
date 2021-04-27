@@ -24,7 +24,7 @@ import model.MyJBDC;
 
 /**
  *
- * @author camer
+ * @author becca
  */
 @WebServlet(name = "DatePicker", urlPatterns = {"/DatePicker"})
 public class DatePicker extends HttpServlet {
@@ -67,7 +67,7 @@ public class DatePicker extends HttpServlet {
         
         
         
-        //String userName = session.getAttribute("userName");
+    
         
         
         
@@ -85,7 +85,7 @@ public class DatePicker extends HttpServlet {
         int status = MyJBDC.savedate(e);
         if (status > 0) {
             out.println("<p>New Date added successfully!</p>");
-           // request.getRequestDispatcher("LoginSuccessClient.jsp").include(request, response);
+          
         } else {
             out.println("Error unable to add date");
         }

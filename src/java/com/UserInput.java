@@ -10,8 +10,8 @@ package com;
  * @author becca
  */
 public class UserInput {
-    private int id,turnover,jans, febs, marchs, EQ1,EQ2,EQ3,EQ4,EQ5,EQ6,EQ7,EQ8,EQ9,lates,weeksales,lastweeksales,advsales;
-    private String name,username,password,role,address,type,option,date,time,amount,medi,dose,reason,dob,permUsername,transferID,ReQ,Place,CName,startDate,endDate,DN, price,issue,Cdate,MadeBy, EQname, un,BR,KIT,BAR,SERVICE,DF;
+    private int id,jans, febs, marchs, EQ1,EQ2,EQ3,EQ4,EQ5,EQ6,EQ7,EQ8,EQ9,lates,weeksales,lastweeksales,advsales;
+    private String name,username,password,role,address,type,option,date,time,medi,reason,dob,permUsername,ReQ,Place,CName,startDate,endDate,DN, issue,Cdate,MadeBy, EQname, un,BR,KIT,BAR,SERVICE,DF;
     
     
 
@@ -171,24 +171,9 @@ public class UserInput {
 //invoice
     //payments
    
-     public String getAmountDue(){
-       return amount;
-    }
-    public void setAmountDue(String name){
-       this.amount = name;
-    }
-    public String getCost(){
-        return amount;
-    }
-    public void setCost(String name){
-        this.amount = name;
-    }
-    public String getDose(){
-        return dose;
-    }
-    public void setDose(String dose){
-        this.dose = dose;
-    }
+
+
+    
     public String getMedication(){
         return medi;
     }
@@ -202,13 +187,7 @@ public class UserInput {
         this.medi = medi;
     }
     
-    public String gettransferID(){
-        return transferID;
-    }
-    
-    public void settransferID(String transferID){
-        this.transferID = transferID;
-    }
+ 
 
     public String getReQ(){
         return ReQ;
@@ -237,19 +216,9 @@ public class UserInput {
     public void setendDate(String endDate){
         this.endDate = endDate;
     }
-    public int getTurnover(){
-        return turnover;
-    }
-    public void setTurnover(int turnover){
-        this.turnover = turnover;
-    }
-    public String getprice(){
-        return price;
-    }
-    public void setprice(String price){
-        this.price = price;
+    
     ////////////////////complaints varibles //////////////////////
-    }
+    
     public String getissue(){
         return issue;
     }

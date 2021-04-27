@@ -37,18 +37,18 @@ public class ViewComplaints extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         out.print("<table border='1' width='100%'");
-        out.print("<tr><th>Employee</th><th>Issue</th><th>Date</th><th>Made BY </th><th>Noted</th></tr>");
+        out.print("<tr><th>Employee</th><th>Issue</th><th>Date</th><th>Made BY </th></tr>");
         List<com.UserInput> list = MyJBDC.getComplaints();
         for (com.UserInput e:list) {
           
             out.print("<tr><td>" + e.getCName()+ 
                     "</td><td>" + e.getissue()+
                     "</td><td>" + e.getCdate()+ 
-                    "</td><td>" + e.getMadeBy() +
+                    "</td><td>" + e.getMadeBy() 
                      
                     
 
-                    "</td><td>"+ "<a href = \"./dateRemover?userID="+e.getID()+"\">clear" + "</td></tr>");
+                    );
             
         }
  

@@ -62,12 +62,11 @@ public class AddTask extends HttpServlet {
         
         int status=MyJBDC.Schedule(e);
         if(status>0){
-            //out.println(DayOff);
-          // out.println("<p>New complaint added successfully!</p>");
+
             request.getRequestDispatcher("/WEB-INF/StaffEmail.jsp").forward(request, response);
         }
         else{
-            out.println("Error making a complaint");
+            out.println("Error making a schedule");
         }
         out.close();     
     }
